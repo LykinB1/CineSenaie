@@ -1,0 +1,208 @@
+/* Geral */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@font-face {
+    font-family: cinema1;
+    src: url(../fonts/cinema_st/cinema_st.ttf);
+}
+@font-face {
+    font-family: cinematografia;
+    src: url(../fonts/cinema_st/cinematografica/Cinematografica-Bold-trial.ttf);
+}
+
+body{
+    background-color: #010c12;
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+/* >>>>>>>>>>   HEADER   <<<<<<<<<< */
+
+
+/* Logo */
+
+header{
+    background-color: #010c12;
+    display: flex;
+    align-items: center;
+    border-bottom: solid white 10px;
+    justify-content: space-between;
+}
+
+header h2{
+    color: white;
+    font-family: cinema1;
+    font-size: 45px;
+}
+
+#logotipo{
+    display: flex;
+    align-items: center;
+}
+
+#logotipo img{
+    width: 120px;
+}
+
+/* SearchBar */
+
+#search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 100px;
+}
+
+#search button{
+    background-color: transparent;
+    border: none;
+}
+
+#search img{
+    width: 55px;
+}
+
+#search input{
+    width: 250px;
+    height: 32px;
+    border: none;
+    border-radius: 20px;
+}
+
+#search input::placeholder{
+    padding-left: 15px;
+}
+
+/* HEADER END */
+
+/* -------------------------------------------------------------------- */
+
+
+
+
+
+
+/* >>>>>>>>>>   MAIN   <<<<<<<<<< */
+
+/* Cartazes */
+
+#cartazes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    gap: 20px;
+}
+
+.cartazes img{
+    width: 280px;
+}
+
+.cartazes img:hover{
+    width: 290px;
+}
+
+#cartaz6 img:hover{
+    width: 320px;
+}
+
+/* MAIN END */
+
+/* ------------------------------------------------------------------------ */
+
+
+
+
+
+
+/* >>>>>>>>>> CRONOGRAMA <<<<<<<<<< */
+
+/* Banner */
+
+#banner{
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/banners/omeninoeagarca.webp);
+    background-repeat: no-repeat;
+}
+
+#contentbanner{
+    background: rgb(1,12,18);
+    background: linear-gradient(90deg, rgba(1,12,18,1) 9%, rgba(1,12,18,0) 40%, rgba(1,12,18,0) 59%, rgba(1,12,18,1) 90%);
+    width: 64%;
+    height: 500px;
+}
+#cartazgarca{
+    position: absolute;
+}
+
+/* Sessões */
+
+#sessoes h1{
+    margin-top: 110px;
+    margin-left: 80px;
+    font-family: cinematografia;
+    font-size: 80px;
+    color: white;
+}
+
+#horarios{
+    display: flex;
+    background-color: #210c3d;
+    width: 50%;
+    height: 80px;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    margin-left: 120px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#horariovalido{
+    font-size: 27px;
+    color: white;
+}
+
+.horarios h3,h4{
+    font-family: cinema1;
+}
+
+#partedecima{
+    width: 90%;
+    height: 150px;
+    border-bottom: solid grey 1px;
+}
+
+#local{
+    display: flex;
+    justify-content: center;
+    width: 945px;
+    height: 300px;
+    background-color: #210c3d;
+    margin-top: 80px;
+    margin-left: 120px;
+    border-radius: 50px;
+}
+#partedecima h2{
+    padding-top: 40px;
+    padding-left: 60px;
+    color: white;
+}
+
+#partedecima p{
+    padding-top: 20px;
+    padding-left: 60px;
+    color: rgb(126, 126, 126); 
+}
