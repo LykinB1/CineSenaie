@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cronograma</title>
+    <title>Cronograma</title>
     <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
 </head>
 <body>
     <section id="header">
@@ -15,8 +16,10 @@
                 <h2>CineSenaie</h2>
             </div>
             <div id="search">
-                <button type="button"><img src="images/svg/search_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
-                <input type="search" placeholder="O que você procura?">
+                <button id="searchButton" type="button">
+                    <img src="../images/svg/search_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </button>
+                <input type="search" id="searchInput" placeholder="O que você procura?">
             </div>
         </header>
     </section>
@@ -31,21 +34,27 @@
             <div id="sessoes">
                 <h1>Sessões</h1>
                 <div id="horarios">
-                    <div class="horarios" id="horariovalido">
-                        <h3>14/05</h3>
-                        <h4>Hoje</h4>
+                    <div class="horarios" >
+                        <a href="" class="horarios" id="horariovalido">
+                            <h3>16/05</h3>
+                            <h4>Hoje</h4>
+                        </a>
                     </div>
                     <div class="horarios">
-                        <h3>15/05</h3>
-                        <h4>Qua</h4>
+                        <a href="" class="horarios">
+                            <h3>17/05</h3>
+                            <h4>Sex</h4>
+                        </a>
                     </div>
+                    <a href="" class="horarios">
+                        <h3>18/05</h3>
+                        <h4>Sab</h4>
+                    </a>
                     <div class="horarios">
-                        <h3>16/05</h3>
-                        <h4>Qui</h4>
-                    </div>
-                    <div class="horarios">
-                        <h3>17/05</h3>
-                        <h4>Sex</h4>
+                        <a href="" class="horarios">
+                            <h3>19/05</h3>
+                            <h4>Dom</h4>
+                        </a>
                     </div>
                 </div>
                 <div id="locais">
@@ -55,13 +64,22 @@
                             <p>St. de Industrias Graficas - Brasília, DF, 70610-460</p>
                         </div>
                         <div id="partedebaixo">
-                            
+                            <div id="opcaodeidioma">
+                                <h4>Dublado</h4>
+                            </div>
+                            <div id="horariodofilme">
+                                <button type="button" id="btnhorariodofilme"><a href="../pages/assentos.html"><h2>08:00 as 12:00</h2></a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
     </section>
-    
+
+
+
+
+    <script src="../Js/script.js"></script>
 </body>
 </html>

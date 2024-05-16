@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assentos</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/assentos.css">
+</head>
+<body>
+    <section id="header">
+        <header>
+            <div id="logotipo">
+                <img src="../images/logotipos/logoCS.jpg" alt="">
+                <h2>CineSenaie</h2>
+            </div>
+            <div id="search">
+                <button id="searchButton" type="button">
+                    <img src="../images/svg/search_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </button>
+                <input type="search" id="searchInput" placeholder="O que você procura?">
+            </div>
+        </header>
+    </section>
+    <!-- Cartaz do Filme -->
+    <div id="banner">
+        <div id="contentbanner">
+            <img src="../images/cartazes/omeninoeagarca.png" alt="" id="cartazgarca">
+        </div>
+    </div>
+    <!--                 -->
+
+    <h1 id="titleassentos">ASSENTOS DISPONíVEIS</h1>
+
+    <section id="assentos">
+        <div class="container">
+            <div id="seat-map" class="box">
+                <h1>Escolha seus assentos</h1>
+                <div class="seat-map" id="seat-map"></div>
+            </div>
+            <div id="side-panel" class="box">
+                <h2>Assentos Selecionados</h2>
+                <div id="selected-seats">
+                    <p>Nenhum assento selecionado.</p>
+                </div>
+                <div id="total-price">
+                    <h2>Total a Pagar</h2>
+                    <p>R$0,00</p>
+                    <button id="buy-button" onclick="buyTickets()">Comprar Ingressos</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="../Js/script.js"></script>
+</body>
+</html>
